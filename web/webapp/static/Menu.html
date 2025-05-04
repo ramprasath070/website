@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites- Menu</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+            
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: white;
+            color: #000000;
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            height: 80px;
+            overflow: hidden;
+            
+        }
+
+        header nav a {
+            padding-right: 10px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .tblogo{
+            display: flex;
+            height: 120px;
+
+        }
+
+        .ltext{
+            height: 95px;
+            margin-top: 5%;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+        }
+
+        .menu-container {
+            padding: 20px;
+            background: #f9f9f9;
+            text-align: center;
+            background-image: url(bg2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .menu-container h1 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border: 3px solid white;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 295px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-details {
+            padding: 10px;
+            font-family: "lucida handwriting";
+        }
+
+        .menu-details h3 {
+            font-size: 1.2rem;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        .menu-details p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .menu-details .price {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #ff5722;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: rgb(4, 186, 95);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: px 0;
+            margin-top: 180px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="tblogo">
+            <img src="1logo.webp" href="home.html" alt="The Baratie Logo">
+            <div class="ltext"><h1 >Delicious Bites</h1></div>
+        </div>
+        
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="contact.html">Contact</a>
+                <a href="admin.html">Administration</a>
+           </nav>
+        
+    </header>
+
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="indian meals.webp" alt="THALI">
+                <div class="menu-details">
+                    <h3>Veg Meals</h3>
+                    <p class="price">₹400/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1nonveg.jpeg" alt=">Non-Veg Meals">
+                <div class="menu-details">
+                    <h3>Non-Veg Meals</h3>
+                    <p class="price">₹450/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1pulao.jpeg" alt="Veg Pulao">
+                <div class="menu-details">
+                    <h3>Veg Pulao</h3>
+                    <p class="price">₹190/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1chicken.jpeg" alt="Chicken Briyani">
+                <div class="menu-details">
+                    <h3>Chicken Briyani</h3>
+                    <p class="price">₹300/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="muttonbriyani.jpg" alt="Mutton Briyani">
+                <div class="menu-details">
+                    <h3>Mutton Briyani</h3>
+                    <p class="price">₹360/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="1amburbriyani.webp" alt="Ambur Briyani">
+                <div class="menu-details">
+                    <h3>Ambur Briyani</h3>
+                    <p class="price">₹320/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="1gheeroast.webp" alt="Chicken Ghee Roast">
+                <div class="menu-details">
+                    <h3>Chicken Ghee Roast</h3>
+                    <p class="price">₹385/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="1gonguramutton.webp" alt=" Gongura Mutton">
+                <div class="menu-details">
+                    <h3>Gongura Mutton</h3>
+                    <p class="price">₹255/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="1korigassi.webp" alt="Kori Gassi">
+                <div class="menu-details">
+                    <h3>Kori Gassi</h3>
+                    <p class="price">₹530/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1PalkattiChettinad.webp" alt=" Palkatti Chettinadu">
+                <div class="menu-details">
+                    <h3>Palkatti Chettinadu</h3>
+                    <p class="price">₹370/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1bagarabaingan.webp" alt="Bagara Baingan">
+                <div class="menu-details">
+                    <h3>Bagara Baingan</h3>
+                    <p class="price">₹490/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1Chemmeenmangacurry.webp" alt="Chemmeen Manga Curry">
+                <div class="menu-details">
+                    <h3>Chemmeen Manga Curry</h3>
+                    <p class="price">₹280/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1prawncurry.jpg" alt="Prawn Curry">
+                <div class="menu-details">
+                    <h3>Prawn Curry</h3>
+                    <p class="price">₹450/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1shikampurikebab.webp" alt="Shikampuri Kebab">
+                <div class="menu-details">
+                    <h3>Shikampuri Kebab</h3>
+                    <p class="price">₹500/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1nanduvaruval.webp" alt="Crab Varuval">
+                <div class="menu-details">
+                    <h3>Crab Varuval</h3>
+                    <p class="price">₹300/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1fish.webp" alt="Meen Poluchathu">
+                <div class="menu-details">
+                    <h3>Meen Poluchathu</h3>
+                    <p class="price">₹260/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1Kaara Azhagar.webp" alt="Kaara Azhagar">
+                <div class="menu-details">
+                    <h3>Kaara Azhagar</h3>
+                    <p class="price">₹700/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1puttu.jpg" alt="Kerala Puttu with Kadalai Curry">
+                <div class="menu-details">
+                    <h3>Kerala Puttu with Kadalai Curry</h3>
+                    <p class="price">₹120/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1sweetidly.webp" alt="Sweet Idly">
+                <div class="menu-details">
+                    <h3>Sweet Idly</h3>
+                    <p class="price">₹70/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1dosa.png" alt="Masala Dosa">
+                <div class="menu-details">
+                    <h3>Masala Dosa</h3>
+                    <p class="price">₹50/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1pesarattu.webp" alt="Pesarattu">
+                <div class="menu-details">
+                    <h3>Pesarattu</h3>
+                    <p class="price">₹60/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1paniyaram.webp" alt="Kuli Paniyaram">
+                <div class="menu-details">
+                    <h3>Kuli Paniyaram</h3>
+                    <p class="price">₹30/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1appam.webp" alt="Appam With Coconut Milk">
+                <div class="menu-details">
+                    <h3>Appam With Coconut Milk</h3>
+                    <p class="price">₹40/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1poori.jpeg" alt="Poori & Masala">
+                <div class="menu-details">
+                    <h3>Poori & Masala</h3>
+                    <p class="price">₹40/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1parotta.jpeg" alt="Madurai Bun Parotta">
+                <div class="menu-details">
+                    <h3>Madurai Bun Parotta</h3>
+                    <p class="price">₹50/-</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="1vada.jpeg" alt="Medhu Vada">
+                <div class="menu-details">
+                    <h3>Medhu Vada</h3>
+                    <p class="price">₹35/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
